@@ -1,0 +1,497 @@
+:root {
+    --primary-color: #ffffff;
+    /* White */
+}
+
+body {
+    background: #F6F7F8 0% 0% no-repeat padding-box;
+    opacity: 1;
+    font-family: "Manrope", sans-serif;
+    overflow-x: hidden;
+}
+
+
+.header {
+    background: var(--primary-color) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 70px;
+    height: 72px;
+    margin: 24px;
+    padding: 0px 1px;
+}
+
+.header .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header .main {
+    display: flex;
+    align-items: center;
+}
+
+.header .main img {
+    width: 190px;
+    height: 48px;
+    padding: 0px 15px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav li {
+    display: flex;
+}
+
+nav li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(8, 0, 0);
+    border-radius: 41px;
+    padding: 10px 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font: normal normal bold 13px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+    width: auto;
+    min-width: 122px;
+}
+
+nav li a:hover {
+    background: #01F0D0;
+    border-radius: 41px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+nav li a span {
+    margin-top: 4px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.profile .info {
+    text-align: left;
+    font: normal normal bold 13px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+}
+
+.profile .info .title {
+    font: normal normal normal 12px/19px Manrope;
+    letter-spacing: 0px;
+    color: #707070;
+}
+
+.profile .icon {
+    display: flex;
+    gap: 20px;
+
+}
+
+
+.section {
+    width: 100%;
+    display: flex;
+    margin: 24px;
+
+
+}
+
+.patients {
+    width: 300px;
+    max-height: 1014px;
+    overflow-y: scroll;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+    padding: 0px 12px;
+    margin-right: 10px;
+}
+
+.patients .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.patients .heading p {
+    font: normal normal 800 20px Manrope;
+    color: #072635;
+}
+
+.patients .info {
+    background: 'white';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info .data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 10px;
+    margin: 10px 0;
+
+}
+
+.data .basic-info {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.data .name {
+    text-align: left;
+    font: normal normal bold 14px/19px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+}
+
+.data .age {
+    font: normal normal normal 14px/19px Manrope;
+    letter-spacing: 0px;
+    color: #707070;
+}
+
+.patients .info .data:hover {
+    background: #D8FCF7 0% 0% no-repeat padding-box;
+}
+
+
+
+.diagnosis-history {
+    width: 680px;
+
+}
+
+.diagnosis-history .historical-data {
+    min-height: 676px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+    padding: 0px 12px;
+}
+
+
+
+.diagnosis-history .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font: normal normal 800 20px Manrope;
+    color: #072635;
+    padding: 10px 15px;
+
+}
+
+.diagnosis-history .historical-data .graph {
+    background: #F4F0FE 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+    padding: 0px 12px 12px 20px;
+    min-height: 298px;
+    display: flex;
+    gap: 24px;
+}
+
+.graph-data {
+    width: 460px;
+}
+
+.graph .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.graph .heading h4 {
+    font: normal normal bold 18px/24px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+    text-transform: capitalize;
+}
+
+.graph .heading p {
+    font: normal normal normal 14px/19px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+}
+
+.graph .chart {
+    width: 467px;
+    margin-top: -20px;
+}
+
+.graph .legend {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.graph .legend .subheading {
+    display: flex;
+    gap: 10px;
+    padding-top: 30px;
+}
+
+.dot-pink {
+    width: 14px;
+    height: 14px;
+    border-radius: 50px;
+    background: #E66FD2;
+    margin-top: 2px
+}
+
+.dot-purple {
+    width: 14px;
+    height: 14px;
+    border-radius: 50px;
+    background: #8C6FE6;
+    margin-top: 2px
+}
+
+.subheading .legend-text {
+    font: normal normal bold 14px/19px Manrope;
+    color: #072635;
+}
+
+.graph .legend .count {
+    font: normal normal bold 22px/30px Manrope;
+    padding-top: 10px;
+}
+
+.graph .legend .description {
+    display: flex;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.graph .legend .description-text {
+    font: normal normal normal 12px/19px Manrope;
+}
+
+.border {
+    height: 1px;
+    width: 100%;
+    background: #989898;
+    margin-top: 10px;
+
+}
+
+.information {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    padding: 10px 0px 20px 0px;
+}
+
+.information .item {
+    border-radius: 12px;
+    width: 158px;
+    height: 182px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.information .title {
+    font: normal normal medium 16px/22px Manrope;
+    padding-top: 10px;
+}
+
+.information .count {
+    font: normal normal 800 30px/41px Manrope;
+}
+
+.information .description {
+    font: normal normal normal 14px/19px Manrope;
+    padding-top: 20px;
+}
+
+.bg-blue {
+    background: #E0F3FA 0% 0% no-repeat padding-box;
+}
+
+.bg-pink {
+    background: #FFE6F1 0% 0% no-repeat padding-box;
+}
+
+.bg-red {
+    background: #FFE6E9 0% 0% no-repeat padding-box;
+}
+
+
+
+.diagnosis-history .list {
+    max-height: 310px;
+    min-height: 310px;
+    overflow-y: scroll;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+    margin-top: 20px;
+}
+
+.heading h4 {
+    font: normal normal 800 24px/33px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+    text-transform: capitalize;
+}
+
+.list .table {
+    padding: 0px 18px;
+
+}
+
+.list table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+
+}
+
+td {
+    font: normal normal normal 14px/19px Manrope;
+    color: #072635;
+}
+
+th {
+    background-color: #F0F0F0;
+    font: normal normal bold 14px/19px Manrope;
+}
+
+th:first-child {
+    border-radius: 24px 0 0 24px;
+    /* Apply border-radius only to the top left corner of the first th */
+}
+
+th:last-child {
+    border-radius: 0 24px 24px 0;
+    /* Apply border-radius only to the top right corner of the last th */
+}
+
+.user-profile-section {
+    width: 367px;
+    margin-left: 10px;
+}
+
+.user-profile-section .user-profile {
+    min-height: 686px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+    padding: 0px 12px;
+}
+
+.user-profile-section .user-profile .profile-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 22px;
+}
+
+.user-profile-section .user-profile .details {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.user-profile .details .item {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding: 0 20px 0 20px;
+}
+
+.user-profile .details .item .info {
+    display: flex;
+    gap: 10px;
+    padding-top: 5px;
+}
+
+.user-profile .details .button {
+    display: flex;
+    gap: 10px;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+.user-profile .details .button button {
+    background: #01F0D0 0% 0% no-repeat padding-box;
+  border: none; 
+  border-radius: 41px;
+  width: 220px;
+  height: 41px;
+  color: black; 
+  font-size: 16px; 
+  font-weight: bold;
+  cursor: pointer; 
+  outline: none;
+  box-shadow: none; 
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+}
+
+
+
+.user-profile-section .report {
+    min-height: 290px;
+    overflow-y: scroll;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.user-profile-section .report .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-radius: 13px
+}
+
+.user-profile-section .report .item:hover {
+    background: #F6F7F8 0% 0% no-repeat padding-box;
+
+}
+
+.font-normal {
+    font: normal normal normal 13px/18px Manrope;
+}
+
+
+.font-normal-1 {
+    font: normal normal normal 14px/18px Manrope;
+}
+
+
+.font-bold {
+    font: normal normal bold 14px/19px Manrope;
+}
+
+
+
+.font-big {
+    font: normal normal 800 24px/33px Manrope;
+    text-align: center;
+}
